@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+<title>BONC欢迎您</title>
+</head>
+<body>
+    <div>
+    <form th:action="@{u/login}" th:method="GET">
+        <label>用户名：</label>&nbsp;
+        <input type="text" name ="username"/><br/>
+        <label>密      码：</label>&nbsp;
+        <input type = "text" name = "password"/><br/>
+        <input type="submit" value="提交"/>&nbsp;&nbsp;
+        <input type = "reset" value = "重置"/>
+    </form>
+    </div>
+    
+</body>
+</html>
