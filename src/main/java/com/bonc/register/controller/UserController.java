@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSON;
+import com.bonc.register.service.StudentService;
 import com.bonc.register.service.UserService;
 
 /**
@@ -31,6 +32,8 @@ public class UserController{
     @Autowired
     @Qualifier("userService")
     private UserService userService;
+    
+    
     
     @RequestMapping(value = {"/"})
     public String addUser(){
@@ -63,5 +66,7 @@ public class UserController{
         String desult = userService.adminDeleteUser(username, password);
         return JSON.toJSONString(desult);
     }
+    
+    
     
 }
