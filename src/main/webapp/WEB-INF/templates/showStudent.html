@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+    <head>
+        <meta content = "text/html;charset = utf-8"></meta>
+        <link rel = "stylesheet" th:href = "@{../css/showStudent.css}"/>
+        <script type="text/javascript" th:src = "@{../js/jquery-3.1.1.min.js}"></script>
+        <script type="text/javascript" th:src = "@{../js/showStudent.js}"></script>
+        <title>查询学生</title>
+    </head>
+    <body>
+        <div class = "index">
+            <button id = "showAllStubtn" value = "查询">查询所有学生</button>&nbsp;&nbsp;
+            <button id = "showLimitbtn" >查询具体记录数</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id = "showInbtn">查询某几个系的学生</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id = "showAgebtn">查询的学生的分数</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <table style = "width:800px" border = "1" id = "showStudentTable" cellspacing = "10px">
+               <thead>
+	                <tr>
+	                    <th>学生id</th>
+	                    <th>姓名</th>
+	                    <th>性别</th>
+	                    <th>生日</th>
+	                    <th>院系</th>
+	                    <th>地址</th>
+	                </tr>
+                </thead>
+                <tbody style = "text-align:center">
+	                
+                </tbody>
+            
+            </table>
+        </div>
+    </body>
+    
+    
+</html>
